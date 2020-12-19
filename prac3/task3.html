@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <script src = "task3.js"></script>
+        <title>Practical Excercise 3 - Part 3</title>
+        <style>
+
+            body {
+                font-family: sans-serif;
+            }
+
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+
+            .left {
+                float: left;
+            }
+
+            .right {
+                float: right;
+            }
+
+            .controls {
+                width: 240px;
+            }
+
+            .date {
+                font-size: 0.8em;
+                font-weight: bold;
+                color: grey;
+            }
+
+            h1,h2,h3 {
+                font-family: serif;
+            }
+
+            #mcount {
+                background-color: cornflowerblue;
+                font-size: 3em;
+                margin: 0px 10px 10px 10px;
+                padding: 10px;
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+
+            #posts {
+                border: 1px solid darkseagreen;
+                padding: 10px;
+                margin: 0px 10px 10px 150px;
+                min-height: 100px;
+            }
+
+            hr {
+                clear: both;
+            }
+
+            .post-time{
+                color: grey;
+                font-size: 80%;
+            }
+
+            .post-content{
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="main"class="container">
+            <button class="right" id="main" onclick="changemenu()">MENU</button>
+            <h1>Part 3 - Javascript Playground</h1>
+            <div id="mcount" onmouseover="mCount()"></div>
+            <div id="posts">
+                <p id="post-time" class="post-time"></p>
+                <p id="post-content" class="post-content"></p>
+            </div>
+            <hr />
+            <textarea id="mytextarea" rows="4" cols="60">Type your text here...</textarea>
+            <br />
+            <div class="controls left">
+                <input id="post-amount" type="number" name="quantity" value="1"/><br />
+                <input type="radio" name="color" value="blue" onclick="changetoBLUE()" /> Blue<br />
+                <input type="radio" name="color" value="red" onclick="changetoRED()"/> Red<br />
+                <button type="button" onclick="getinput()" >Post</button>
+            </div>
+            <div class="controls left">
+                <input type="range" name="visible" min="1" max="10" value="10"/><br />
+                <input type="checkbox" name="style" value="bold" /> Bold<br />
+                <input type="checkbox" name="style" value="italic" /> Italic<br />
+                <select>
+                    <option disabled selected value="-1">Choose a post to reply to</option>
+                </select>
+            </div>
+            <hr />
+        </div>
+
+        <div id="menu" class="container" style="display:none">
+            <button onclick="changemenu()" class="right">BACK</button>
+            <p>&nbsp;</p>
+            <span>Background Color:</span><input id="color" type="text" onchange="color()">
+        </div>
+
+    </body>
+
+</html>
