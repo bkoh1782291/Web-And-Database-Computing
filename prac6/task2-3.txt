@@ -1,0 +1,8 @@
++---------------------+
+| Tables_in_enrolment |
++---------------------+
+| Enrolments          |
+| Students            |
+| Subjects            |
+| Teachers            |
++---------------------+
