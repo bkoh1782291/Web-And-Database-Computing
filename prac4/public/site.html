@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function  contactclick(){
+            var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function(){
+                    if (this.readyState == 4 && this.status == 200){
+                        document.getElementById("content").innerHTML = this.responseText;
+                    }
+            };
+            xhttp.open("GET", "/contact.ajax", true);
+            xhttp.send();
+        }
+        function  searchclick() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("content").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "/search.ajax", true);
+            xhttp.send();
+        }
+        function aboutlink(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange=function() {
+                if(this.readyState== 4 && this.status == 200) {
+                    //console.log(this.responseText);
+                    document.getElementById("content").innerHTML= this.responseText;
+                }
+            };
+            xhttp.open("GET","/about.ajax",true);
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <h1>My AJAX Site</h1>
+        <button type="button" id="contact" onclick="contactclick()">contact</button>
+        <button type="button" id="search" onclick="searchclick()">search</button>
+        <button type="button" id="about" onclick="aboutlink()">about</button>
+    <div id="content"></div>
+</body>
+</html>
