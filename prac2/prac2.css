@@ -1,0 +1,189 @@
+#background2-4 {
+  background-color: ghostwhite;
+  background-image: url("rect.png"), url("rect.png"), url("rect.png");
+  background-repeat: repeat;
+  background-size:97px,67px,37px;
+}
+
+#content {
+  background-color: white;
+}
+
+.h1{
+  font-family: sans-serif;
+}
+
+.para{
+  font-family: serif;
+}
+
+.darkgreen{
+  color: darkgreen;
+}
+
+.grey {
+  color:grey;
+}
+.mark{
+  background-color: pink;
+  color: darkblue;
+}
+
+.h2{
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.preformat{
+  font-family: monospace;
+}
+
+.transparent-text {
+  color:rgba(0, 0, 0, 0.5);
+  font-family: monospace;
+}
+.h3{
+  color:rgba(0, 0, 139, 0.8);
+}
+.blue {
+  color:blue;
+}
+
+.fancy {
+  font-family:cursive;
+}
+
+.border {
+  border-radius: 8px;
+  border: 1px solid #73AD21;
+}
+
+.bord{
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.red-border {
+  border-style: solid;
+  border-color: red;
+}
+
+.red-outline {
+  outline-style: solid;
+  outline-color:red;
+}
+
+#hr2-6 {
+  border-style: solid;
+  border-color: #9FEFE4;
+}
+
+.red-border-2 {
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+}
+
+.blue-border {
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+}
+
+.rounded-red-border{
+  border-style: solid;
+  border-bottom-style: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-width: 1px;
+  border-color:red;
+}
+
+.rounded-blue-border{
+  border-style:solid;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-width: 1px;
+  border-color: blue;
+}
+
+.bluebox1{
+  background-color:blue;
+  border-style:solid;
+  border-color:red;
+}
+
+    /* task 2-7 */
+
+.yellowbox1{
+  background-color:yellow;
+  border-style:solid;
+  border-color:red;
+  margin:10px 20px 10px;
+  padding: 12px 12px 12px;
+  height:200px;
+  width:700px;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.bluebox2 {
+  background-color:blue;
+  margin-top:20px;
+  border-style:solid;
+  border-color:red;
+}
+
+.yellowbox2 {
+  background-color:yellow;
+  border-style:solid;
+  border-color:red;
+  width:400px;
+  height:400px;
+  margin:auto;
+  padding: 12px 12px 12px;
+
+}
+
+#first {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkgrey;
+  color:white;
+}
+
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color:darkgrey;
+  text-shadow: 0.5px 0.5px;
+}
+
+.n {
+  list-style-type: decimal;
+}
+
+.m{
+  list-style-type: square;
+}
+
+.italic{
+  list-style-type: lower-roman;
+}
+
+.pad{
+  padding: 0px 12px 0px;
+}
